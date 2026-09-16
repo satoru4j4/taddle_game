@@ -1,0 +1,45 @@
+{
+  "intro": [
+    "Desa diliputi asap ketika seorang penjaga menyerahkan pita milik Putri. Pasukan Raja Bayangan telah membawanya ke kastel. Di tengah reruntuhan, hanya satu janji yang tersisa: pulanglah bersamaku.",
+    "Raja percaya bahwa menyakiti orang yang paling kau cintai akan meruntuhkan kehendakmu dan membuka jalan untuk merampas kekuatanmu. Ia menunggumu di balik tujuh wilayah yang dikuasai bayangan.",
+    "Di telapak tanganmu, Gashat Taddle Quest menyala. Ia bukan janji untuk selalu menang, melainkan tekad untuk tetap melindungi. Kau menggenggam pedang dan melangkah menuju cahaya yang belum padam."
+  ],
+  "fantasy-story": [
+    "Jauh sebelum bayangan menutupi kerajaan, seorang kesatria berjalan seorang diri menuju gunung tempat seekor naga mengurung orang yang paling ia sayangi. Ia tidak membawa pasukan. Di balik zirahnya yang retak, ia hanya menyimpan sehelai kain dan sebuah janji: pulanglah bersamaku.",
+    "Pertempuran berlangsung hingga nama siang dan malam kehilangan makna. Setiap kali api merobek tubuhnya, ia mengingat tangan yang pernah merawat lukanya. Setiap kali lututnya menyentuh tanah, ia mengingat seseorang yang masih menunggu di balik pintu batu. Ia tidak berdiri karena tidak takut mati. Ia berdiri karena ketakutannya meninggalkan orang itu sendirian jauh lebih besar.",
+    "Pada fajar terakhir, pedangnya menembus jantung naga. Gunung berhenti bergetar. Namun, ketika rantai terakhir terputus, sang kesatria sudah tidak memiliki cukup kehidupan untuk menuruni gunung. Dengan tangan yang gemetar, ia menunjuk jalan pulang dan tersenyum seolah perjalanan mereka baru saja dimulai.",
+    "“Pergilah. Aku akan menjagamu sampai cahaya terakhir.”\n\nOrang yang diselamatkannya memohon agar ia ikut pulang. Ia ingin menjawab, tetapi napasnya telah menjadi embun di udara dingin. Bahkan setelah jantungnya berhenti, sisa cahaya pedangnya tetap menyala, menghalau makhluk gelap sampai langkah orang itu mencapai lembah dengan selamat.",
+    "Tekad itulah yang tinggal di dalam Gashat ini. Bukan kemenangan atas naga, bukan nama seorang pahlawan, melainkan keputusan untuk menjaga seseorang ketika dirinya sendiri tidak lagi dapat diselamatkan.\n\nSaat kau menggenggamnya, terdengar sebuah pertanyaan dari masa yang sangat jauh: “Jika jalan pulang harus dibayar dengan seluruh keberanianmu, apakah janjimu masih akan kau tepati?”\n\nTaddle Fantasy menunggu jawabanmu."
+  ],
+  "loss": [
+    "Ia berlari menghampirimu sebelum Raja mengangkat pedangnya. Kini cahaya mengalir di sela jemarimu. “Aku di sini.”",
+    "“Putri telah pergi pada malam itu. Aku menjaga tubuh dan kenangannya, seperti yang ia minta.” Cahaya itu berhenti sejenak. “Tetapi menemanimu adalah pilihanku.”",
+    "“Aku masih ingin menjagamu.” Sayapnya perlahan menjadi cahaya di tanganmu.",
+    "Kau menunduk, menggenggam cahaya itu dengan kedua tangan. “Terima kasih.”"
+  ],
+  "legacy-story": [
+    "Ada kehilangan yang tidak datang ketika seseorang menutup mata untuk terakhir kali. Ada kehilangan yang baru benar-benar kita hadapi ketika kita berhenti meminta dunia mengembalikan apa yang telah pergi.",
+    "Putri telah meninggal sebelum langkah pertamamu menuju kastel. Pada malam bencana itu, doa terakhirnya tidak meminta hidup yang lebih panjang. Ia hanya meminta agar kau tidak dibiarkan sendirian. Seorang Malaikat Cahaya mendengar doa tersebut, menjaga tubuh yang ditinggalkannya, dan membawa kenangan yang membuatmu mengenali senyumnya.",
+    "Namun, segala yang tumbuh sesudahnya bukan sekadar gema masa lalu. Setiap percakapan di bawah hujan, setiap tangan yang meraihmu ketika kau hampir menyerah, setiap langkah di sisimu adalah pilihan malaikat itu sendiri. Ia mengetahui bahwa suatu hari kau harus mendengar kebenaran. Meski begitu, ia memilih tinggal, bukan untuk menggantikan orang yang telah pergi, melainkan agar harapan tidak ikut dikuburkan bersamanya.",
+    "Kini tubuh itu telah runtuh. Kau memohon satu kesempatan lagi, tetapi untuk pertama kalinya cahaya itu tidak menjanjikan bahwa semuanya akan kembali seperti dahulu.",
+    "“Aku tidak bisa mengembalikan dirinya,” bisiknya. “Dan setelah ini, aku tidak bisa lagi menggenggam tanganmu. Tetapi setiap kali kau memilih untuk terus hidup, ketahuilah: harapan yang kuberikan kepadamu tidak pernah berpura-pura.”",
+    "Kau akhirnya melepaskan tuntutan agar cinta selalu berarti memiliki. Kau menerima kematian Putri, mengenali jiwa yang telah menemanimu, dan mengucapkan terima kasih tanpa meminta mereka tinggal dengan cara yang sama.\n\nDi antara kedua tanganmu, cahaya memadat menjadi sebuah Gashat. Bukan amarah yang menyalakannya. Bukan penyangkalan. Ia lahir dari keberanian menerima kehilangan tanpa menyerahkan masa depan kepada kegelapan.\n\n“Bawalah aku sebagai cahaya,” kata suara itu untuk terakhir kalinya. “Bukan sebagai rantai yang menahanmu di masa lalu.”\n\nSaat Taddle Legacy menyelimuti tubuhmu, tak ada lagi sosok yang berdiri di belakangmu. Namun, untuk pertama kalinya sejak malam bencana, kau mampu berdiri tanpa berpura-pura bahwa tidak ada yang pernah pergi."
+  ],
+  "phase2-transition": [
+    "Mahkota retak, tetapi bayangan belum berakhir. Raja bangkit dengan tubuh yang diselimuti retakan merah. “Kau masih berani mempertahankan janjimu?”\n\nRaja Bayangan memasuki fase kedua. HP, stamina, dan botolmu diteruskan dari pertarungan sebelumnya."
+  ],
+  "endings": {
+    "real": {
+      "title": "Real Ending",
+      "text": "Kerajaan melihat seorang pemenang pulang. Hanya kau yang mengetahui betapa sunyinya jalan itu. Putri tidak kembali, dan cahaya yang menemanimu tak lagi memiliki suara. Tetapi dalam Taddle Legacy, harapan yang ia pilih untuk berikan tetap hidup. Untuk pertama kalinya, kau melangkah demi hari esok, bukan demi mengulang kemarin."
+    },
+    "good": {
+      "title": "Good Ending",
+      "text": "Di luar kastel, ia mengatakan kebenaran yang selama ini ditahannya: Putri telah pergi, dan jiwa yang berdiri di hadapanmu adalah Malaikat Cahaya. Kau menangis untuk seseorang yang tak dapat kembali, lalu menggenggam tangan seseorang yang masih memilih tinggal. Kalian berjalan menuju fajar, membawa cinta yang tidak lagi membutuhkan kebohongan."
+    },
+    "extream": {
+      "title": "Extream Ending",
+      "text": "Dengan Taddle Quest, kau menuntaskan janji yang tampak mustahil. Ketika cahaya fajar membuka kebenaran tentang Putri, kau tidak memintanya menyembunyikan siapa dirinya lagi. Sang malaikat tetap di sisimu atas pilihannya sendiri. Pedangmu tidak menjadi legenda karena kekuatan baru, melainkan karena tangan yang tak berhenti memperjuangkan harapan."
+    }
+  }
+}

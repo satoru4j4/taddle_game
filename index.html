@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09121d">
+  <meta name="description" content="Taddle: Janji dalam Cahaya. Petualangan aksi tujuh wilayah, sebuah janji, dan tiga akhir perjalanan.">
+  <title>Taddle — Janji dalam Cahaya</title>
+  <link rel="icon" href="resource-taddle-game/assets/ui/story/icon-taddle.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app" aria-label="Taddle: Janji dalam Cahaya">
+    <div id="stage">
+      <canvas id="game" width="1280" height="720" tabindex="0" aria-label="Dunia permainan. Gunakan keyboard atau kontrol sentuh untuk bermain."></canvas>
+      <section id="hud" hidden aria-label="Status kesatria">
+        <div class="vitals"><div class="form-line"><span class="crest">✧</span><span id="form-name">Taddle Quest</span><span id="save-indicator" title="Progres tersimpan lokal">TERSIMPAN</span></div>
+          <div class="meter-line"><span>HP</span><div class="meter hp"><i id="hp-fill"></i></div><output id="hp-text"></output></div>
+          <div class="meter-line"><span>ST</span><div class="meter stamina"><i id="stamina-fill"></i></div><output id="stamina-text"></output></div>
+        </div>
+        <div class="region"><span id="level-number"></span><h2 id="region-name"></h2><p id="objective"></p></div>
+        <button id="pause-button" class="icon-button" aria-label="Jeda permainan" title="Jeda (Escape)">Ⅱ</button>
+        <div id="boss-hud" hidden><div><span id="boss-name"></span><span id="boss-health"></span></div><div class="meter boss"><i id="boss-fill"></i></div><small id="boss-cue"></small></div>
+        <div class="supply"><span><img src="resource-taddle-game/assets/objects/health-potion.png" alt=""><kbd id="hp-key">Q</kbd><b id="hp-potions">3</b></span><span><img src="resource-taddle-game/assets/objects/stamina-potion.png" alt=""><kbd id="stamina-key">R</kbd><b id="stamina-potions">2</b></span></div>
+        <div id="interaction" hidden></div>
+        <div class="combat-controls" aria-label="Petunjuk tombol permainan"><div id="skill-bar" class="skill-bar" aria-label="Skill dan waktu pemulihan"></div><div class="control-strip" id="control-strip"></div></div>
+      </section>
+      <nav id="touch-controls" hidden aria-label="Kontrol sentuh permainan">
+        <div class="touch-movement"><button data-action="left" aria-label="Gerak kiri"><span class="control-icon"></span></button><button data-action="right" aria-label="Gerak kanan"><span class="control-icon"></span></button></div>
+        <div class="touch-supplies"><button data-action="hpPotion" aria-label="Minum potion HP"><span class="control-icon"></span><small class="control-badge">3</small></button><button data-action="staminaPotion" aria-label="Minum potion stamina"><span class="control-icon"></span><small class="control-badge">2</small></button></div>
+        <div class="touch-utilities"><button data-action="journal" aria-label="Catatan perjalanan"><span class="control-icon"></span></button><button data-action="interact" aria-label="Interaksi"><span class="control-icon"></span></button></div>
+        <div class="touch-skills">
+          <button data-action="skillBlessing" aria-label="Bleesing of Legacy" hidden disabled><span class="control-icon"></span><small class="control-badge"></small></button>
+          <button data-action="skillSlash" aria-label="Taddle Slash" hidden disabled><span class="control-icon"></span><small class="control-badge"></small></button>
+          <button data-action="skillBlink" aria-label="Taddle Blink"><span class="control-icon"></span><small class="control-badge"></small></button>
+        </div>
+        <div class="touch-actions"><button data-action="block" aria-label="Tahan block"><span class="control-icon"></span></button><button data-action="parry" aria-label="Parry"><span class="control-icon"></span></button><button data-action="light" aria-label="Serangan ringan"><span class="control-icon"></span></button><button data-action="heavy" aria-label="Serangan berat"><span class="control-icon"></span></button><button data-action="jump" aria-label="Lompat"><span class="control-icon"></span></button></div>
+      </nav>
+      <section id="menu" class="screen menu-screen">
+        <div class="menu-shade"></div>
+        <header class="menu-top"><a class="brand" href="./" aria-label="Taddle beranda"><img src="resource-taddle-game/assets/ui/story/icon-taddle.png" alt=""> <span>TADDLE<span class="brand-small">A CHRONICLE OF LIGHT</span></span></a><span class="edition">SEBUAH PETUALANGAN AKSI 2D <i></i> EDISI PERTAMA</span></header>
+        <div class="menu-copy"><p class="eyebrow"><span></span> TUJUH WILAYAH. SATU JANJI.</p><h1>TADDLE</h1><div class="subtitle"><span></span> Janji dalam Cahaya <span></span></div><p class="tagline">Di ujung kegelapan, ada janji<br>yang belum selesai.</p>
+          <nav class="menu-actions" aria-label="Menu utama">
+            <button id="new-game" class="primary"><span>Mulai perjalanan</span><span aria-hidden="true">⟶</span></button>
+            <button id="continue-game" disabled><span>Lanjutkan perjalanan</span><span aria-hidden="true">↗</span></button>
+            <p id="continue-hint">Belum ada perjalanan tersimpan.</p>
+            <div class="menu-secondary"><button id="guide-button">Panduan</button><span>·</span><button id="settings-button">Pengaturan</button><span>·</span><button id="gallery-button">Galeri akhir</button></div>
+          </nav>
+        </div>
+        <aside class="chapter-note"><span class="diamond">◇</span><p>“Aku akan menjagamu<br>sampai cahaya terakhir.”</p><span>SEBUAH JANJI YANG MELAMPAUI WAKTU</span></aside>
+        <footer class="menu-footer"><span><i class="status-dot"></i> PC & HP · LANDSCAPE</span><button id="fullscreen-button" class="text-button">⛶ &nbsp; Layar penuh</button><span class="version">TADDLE / 01</span></footer>
+      </section>
+      <section id="story" class="screen story-screen" hidden aria-label="Kisah perjalanan"><div class="story-shade"></div><article class="story-card"><p class="eyebrow" id="story-kicker"></p><h2 id="story-title"></h2><div class="ornament">✦</div><div id="story-text"></div><footer><span id="story-count"></span><div id="story-actions"></div></footer></article></section>
+      <section id="transform" class="screen transform-screen" hidden><div class="transform-top"><p class="eyebrow">SEBUAH JANJI MENJADI CAHAYA</p><h2 id="transform-title"></h2></div><button id="short-transform" hidden>Ringkas animasi <span>⟶</span></button></section>
+      <section id="ending" class="screen ending-screen" hidden><div class="menu-shade"></div><article><p class="eyebrow">PERJALANAN TELAH MENEMUKAN AKHIRNYA</p><h2 id="ending-title"></h2><div class="ornament">✦</div><p id="ending-text"></p><div class="button-row"><button id="ending-menu" class="primary">Kembali ke menu</button><button id="ending-new">Perjalanan baru</button></div></article></section>
+      <div id="toast" role="status" aria-live="polite" hidden></div>
+      <div id="loading" class="screen loading-screen" hidden><span class="loading-star">✦</span><p class="eyebrow">MENYIAPKAN PERJALANAN</p><h2 id="loading-title">Menyalakan cahaya…</h2><progress id="load-progress" max="100" value="0"></progress><p id="loading-detail"></p></div>
+    <aside id="rotate-notice" hidden role="status"><span aria-hidden="true">↻</span><h2>Putar HP ke landscape</h2><p>Gunakan posisi mendatar agar arena dan tombol terlihat utuh.<br>Permainan dijeda saat layar diputar.</p></aside>
+      <div id="modal-layer" class="modal-layer" hidden><section id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"></section></div>
+    </div>
+    <noscript>Aktifkan JavaScript untuk memainkan Taddle.</noscript>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
